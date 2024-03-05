@@ -1,0 +1,37 @@
+*{/*diseño de cuerpo de la pagina*/
+    /*tipo de letra*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;/*letra en negritas*/
+}
+
+.left{/*estilo del primer bloque de lista desordenada*/
+    background-color: crimson;/*color de fondo*/
+    float: left;/*permite que los elementos siguientes se slineen al costado*/
+    width:30%; /*ancho del bloque*/
+    color: black;/*Color de letra dentro del contenedor*/
+}
+
+.main{/*estilo para el bloque de parrafo*/
+    background-color: blueviolet;/*color de fondo*/
+    float: left;/*permite que los elementos siguientes se slineen al costado*/
+    width:40%;  /*ancho del bloque*/
+    height: 122px; /*altura del bloque*/
+    color: black;/*Color de letra dentro del contenedor*/
+}
+
+.right{/*estilo para segunda lista ordenada*/
+    background-color: crimson;/*color de fondo*/
+    float:left;/*permite que los elementos siguientes se slineen al costado*/
+    width: 30%;/*ancho del bloque*/
+    color: black;/*Color de letra dentro del contenedor*/
+}
+
+/* Media query para pantallas menores o iguales a 760px */
+@media screen and (max-width: 760px) {
+    .left, 
+    .main, 
+    .right {
+        width: 100%; /* En pantallas reducidaspermite apilarse verticalmente */
+    }
+}
+
